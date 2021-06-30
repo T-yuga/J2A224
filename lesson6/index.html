@@ -16,29 +16,34 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-    <h1>
+    <header class="header">
+    <h1 class="logo">
       <img src="img/logo.svg" alt="Cornetto">
     </h1>
     </header>
     
     <!-- <main>の中身をマークアップ -->
-    <main>
-    <figure>
-      <img src="img/top.jpg" alt="Cornetto のパン ">
-    </figure>
+    <!-- メインコンテンツ -->
+    <main class="main">
+      <!-- メインイメージ -->
+      <figure class="top center slide" id="top">
+        <img src="img/top_01.jpg" alt="Cornetto のパン1" />
+        <img src="img/top_02.jpg" alt="Cornetto のパン2" />
+        <img src="img/top_03.jpg" alt="Cornetto のパン3" />
+        <img src="img/top_01.jpg" alt="Cornetto のパン1" />
+      </figure>
     
-    <nav>
-    <ul>
-      <li><a href="#about">about</a></li>
-      <li><a href="#menu">menu</a></li>
-      <li><a href="#photos">photos</a></li>
-      <li><a href="#access">access</a></li>
+    <nav class="nav">
+    <ul class="nav-list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#photos">Photos</a></li>
+      <li><a href="#access">Access</a></li>
     </ul>
     </nav>
     
-    <section id="about">
-    <h2>
+    <section class="section about" id="about">
+    <h2 class="heading">
       <img src="img/ttl_about.svg" alt="about">
     </h2>
     <p>Cornettoは東京都中区にあるパン屋です。<br>
@@ -48,11 +53,11 @@
     ぜひご賞味ください。</p>
     </section>
     
-    <section id="menu">
-    <h2>
+    <section class="section menu" id="menu">
+    <h2 class="heading">
       <img src="img/ttl_menu.svg" alt="menu">
     </h2>
-    <ul>
+    <ul class="menu-list">
       <li>クロワッサン・・・ 140円</li>
       <li>ベーグル・・・ 180円</li>
       <li>ピザパン・・・ 180円</li>
@@ -61,11 +66,11 @@
     </ul>
     </section>
     
-    <section id="photos">
-    <h2>
+    <section class="section photos" id="photos">
+    <h2 class="heading">
       <img src="img/ttl_photos.svg" alt="photos">
     </h2>
-    <ul>
+    <ul class="photos-list">
       <li>
         <figure>
           <img src="img/photos_01.jpg" alt="ゆとりある朝食">
@@ -85,40 +90,57 @@
           <figcaption>調理パンだけでなく、ハードパンやベーグルも当店の看板商品です。</figcaption>
         </figure>
       </li>
+      <li>
+        <figure>
+          <iframe src="https://www.youtube.com/embed/0xnHXUySSMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <figcaption>著作権フリー素材：パン・バター・美味しい・しずる・朝食・日常・生活</figcaption>
+        </figure>
+      </li>
     </ul>
     </section>
     
-    <section id="access">
-    <h2>
+    <section class="section access" id="access">
+    <h2 class="heading">
       <img src="img/ttl_access.svg" alt="access">
     </h2>
-    <div>
-      <address>
+    <!-- 左右横並び --> 
+    <div class="access-row">
+      <!-- 左側 --> 
+      <address class="access-address">
       <strong>Bakery shop Cornetto</strong><br>
       〒123-4567<br>
       東京都中区舟入中町4-40<br>
       <strong>TEL・FAX 012-345-6789</strong>
       </address>
-      <figure>
-      <img src="img/map.png" alt="店舗周辺地図">
+      <!-- 右側 --> 
+      <figure class="access-map">
+        <!-- <img src="img/map.png" alt="店舗周辺地図"> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46640.50835318908!2d141.32687547012864!3d43.06179932178906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2bd6e30a2985%3A0x5398ede5382c8a3c!2z5a2m5qCh5rOV5Lq66Zu75a2Q6ZaL55m65a2m5ZySIOWMl-a1t-mBk-aDheWgseWwgumWgOWtpuagoQ!5e0!3m2!1sja!2sjp!4v1625037223214!5m2!1sja!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </figure>
     </div>
     </section>
     </main>
+    <!-- トップに戻るボタン --> 
+    <a href="#top"><img class="pagetop" src="img/pagetop.png" alt="ページトップに戻る" width="60" height="60" /></a>
     
-    <footer>
-    <div>
-      <p><img src="img/logo_w.svg" alt="Cornetto"></p>
-      <div>
-        <nav>
-          <ul>
-            <li><a href="#about">about</a></li>
-            <li><a href="#menu">menu</a></li>
-            <li><a href="#photos">photos</a></li>
-            <li><a href="#access">access</a></li>
+
+    <footer class="footer">
+    <div class="footer-container">
+      <p class="footer-logo">
+        <img src="img/logo_w.svg" alt="Cornetto">
+      </p>
+      <div class="footer-body">
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#photos">Photos</a></li>
+            <li><a href="#access">Access</a></li>
           </ul>
         </nav>
-        <p><small>&copy;Copyright 2019 MdN Corporation.</small></p>
+        <p class="copyright">
+          <small>&copy;Copyright 2019 MdN Corporation.</small>
+        </p>
       </div>
     </div>
     </footer>
